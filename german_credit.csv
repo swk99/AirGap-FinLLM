@@ -1,0 +1,201 @@
+checking_status,duration,credit_history,purpose,credit_amount,savings_status,employment,installment_commitment,housing,age,job,num_dependents,class
+no checking,9,existing paid,furniture/equipment,7564,<100,unemployed,1,own,46,unskilled resident,1,good
+<0,70,critical/other existing credit,car,6765,>=1000,4<=X<7,2,free,56,skilled,1,bad
+<0,60,existing paid,radio/tv,5344,<100,1<=X<4,1,rent,43,unskilled resident,2,bad
+0<=X<200,11,delayed previously,education,4340,500<=X<1000,unemployed,3,own,58,skilled,1,bad
+no checking,35,existing paid,car,7878,no known savings,4<=X<7,3,free,59,skilled,1,good
+<0,40,no credits/all paid,education,5857,>=1000,<1,2,free,43,skilled,1,good
+no checking,35,no credits/all paid,other,10586,500<=X<1000,1<=X<4,1,rent,55,skilled,1,good
+>=200,64,all paid,radio/tv,4825,<100,>=7,3,own,56,high qualif/self emp/mgmt,2,good
+<0,71,delayed previously,car,1793,no known savings,<1,2,own,46,unskilled resident,2,good
+>=200,38,critical/other existing credit,other,626,no known savings,>=7,3,own,40,unskilled resident,2,good
+>=200,6,existing paid,education,6104,>=1000,unemployed,3,own,51,unskilled non-resident,1,good
+<0,6,critical/other existing credit,radio/tv,16260,no known savings,unemployed,3,free,34,unskilled resident,1,bad
+no checking,16,delayed previously,other,2517,>=1000,<1,2,own,49,unskilled non-resident,2,good
+>=200,33,critical/other existing credit,other,6841,100<=X<500,4<=X<7,3,free,52,high qualif/self emp/mgmt,1,good
+no checking,49,no credits/all paid,education,18400,<100,>=7,2,rent,23,unskilled resident,1,good
+no checking,48,no credits/all paid,education,8048,100<=X<500,4<=X<7,2,own,27,high qualif/self emp/mgmt,1,bad
+>=200,30,no credits/all paid,car,14374,100<=X<500,4<=X<7,4,free,74,unskilled resident,1,good
+0<=X<200,19,all paid,furniture/equipment,6482,>=1000,4<=X<7,2,free,30,skilled,2,good
+no checking,62,critical/other existing credit,car,1907,>=1000,unemployed,1,rent,29,high qualif/self emp/mgmt,2,good
+>=200,13,all paid,repairs,320,500<=X<1000,1<=X<4,4,free,46,high qualif/self emp/mgmt,1,good
+<0,13,critical/other existing credit,business,18016,no known savings,1<=X<4,1,rent,56,high qualif/self emp/mgmt,1,good
+no checking,29,no credits/all paid,education,2476,<100,4<=X<7,1,own,34,unskilled resident,1,good
+0<=X<200,39,all paid,business,10545,<100,1<=X<4,4,rent,61,skilled,2,good
+no checking,7,delayed previously,education,3526,no known savings,>=7,2,own,35,unskilled non-resident,2,bad
+<0,53,existing paid,furniture/equipment,14608,>=1000,1<=X<4,1,own,71,skilled,1,bad
+<0,39,no credits/all paid,car,18378,<100,1<=X<4,3,own,32,skilled,1,good
+0<=X<200,70,delayed previously,radio/tv,1914,no known savings,4<=X<7,3,rent,19,skilled,1,good
+0<=X<200,26,delayed previously,education,14264,>=1000,unemployed,1,rent,75,unskilled non-resident,1,bad
+<0,61,all paid,car,10351,100<=X<500,unemployed,3,rent,62,unskilled non-resident,1,good
+>=200,25,all paid,other,5574,<100,4<=X<7,1,rent,66,skilled,2,bad
+<0,40,all paid,other,3792,500<=X<1000,unemployed,4,rent,31,high qualif/self emp/mgmt,2,good
+<0,34,no credits/all paid,business,6578,500<=X<1000,1<=X<4,3,rent,68,skilled,2,good
+>=200,48,no credits/all paid,car,8809,<100,>=7,3,rent,25,high qualif/self emp/mgmt,2,bad
+0<=X<200,61,critical/other existing credit,education,4039,500<=X<1000,>=7,2,free,21,high qualif/self emp/mgmt,1,good
+<0,52,delayed previously,car,11069,>=1000,1<=X<4,1,own,38,skilled,2,good
+0<=X<200,22,all paid,repairs,12673,<100,>=7,3,free,54,unskilled resident,2,good
+>=200,47,delayed previously,repairs,14738,<100,>=7,4,own,29,unskilled resident,2,good
+0<=X<200,17,all paid,business,10421,<100,<1,2,rent,21,unskilled non-resident,2,good
+no checking,64,delayed previously,business,6621,500<=X<1000,4<=X<7,4,rent,28,unskilled resident,1,bad
+<0,28,critical/other existing credit,repairs,1895,>=1000,<1,1,free,27,high qualif/self emp/mgmt,2,bad
+>=200,70,delayed previously,other,18202,500<=X<1000,<1,4,free,35,unskilled non-resident,2,bad
+>=200,36,existing paid,repairs,2788,100<=X<500,<1,3,free,39,unskilled resident,1,good
+>=200,25,all paid,car,13844,500<=X<1000,1<=X<4,4,free,22,unskilled non-resident,2,good
+no checking,54,delayed previously,car,11776,100<=X<500,4<=X<7,4,own,66,unskilled non-resident,2,good
+>=200,68,no credits/all paid,repairs,11264,500<=X<1000,<1,4,rent,58,unskilled resident,2,good
+no checking,16,delayed previously,furniture/equipment,15378,<100,unemployed,3,free,39,unskilled non-resident,2,good
+>=200,41,delayed previously,radio/tv,2933,500<=X<1000,unemployed,1,free,33,unskilled resident,1,bad
+<0,31,no credits/all paid,education,5243,<100,<1,4,own,26,unskilled non-resident,2,good
+0<=X<200,27,critical/other existing credit,education,4003,<100,1<=X<4,1,own,20,skilled,2,good
+<0,15,critical/other existing credit,business,8207,no known savings,1<=X<4,1,own,69,unskilled resident,2,good
+0<=X<200,14,critical/other existing credit,business,11431,no known savings,4<=X<7,4,rent,46,skilled,2,bad
+>=200,28,critical/other existing credit,business,9100,>=1000,>=7,4,free,46,skilled,2,bad
+no checking,41,delayed previously,furniture/equipment,15477,>=1000,>=7,4,free,20,high qualif/self emp/mgmt,2,good
+<0,51,existing paid,radio/tv,9413,>=1000,1<=X<4,1,own,31,unskilled resident,1,bad
+>=200,36,delayed previously,business,16333,500<=X<1000,unemployed,1,free,33,high qualif/self emp/mgmt,1,good
+0<=X<200,66,critical/other existing credit,education,11514,500<=X<1000,>=7,3,free,63,high qualif/self emp/mgmt,2,good
+<0,21,all paid,radio/tv,4167,>=1000,<1,2,rent,66,high qualif/self emp/mgmt,2,bad
+0<=X<200,18,all paid,radio/tv,7704,100<=X<500,<1,3,rent,64,unskilled non-resident,2,good
+no checking,43,all paid,business,16335,no known savings,unemployed,3,free,49,high qualif/self emp/mgmt,2,good
+no checking,38,delayed previously,car,2391,500<=X<1000,4<=X<7,1,own,59,unskilled resident,1,good
+0<=X<200,16,all paid,car,13887,>=1000,>=7,2,own,43,high qualif/self emp/mgmt,2,good
+>=200,45,critical/other existing credit,education,2223,>=1000,unemployed,2,own,32,skilled,1,good
+<0,15,all paid,car,13636,500<=X<1000,>=7,4,free,21,unskilled non-resident,2,bad
+>=200,15,all paid,radio/tv,6732,500<=X<1000,unemployed,2,own,28,skilled,1,good
+<0,45,critical/other existing credit,business,9707,500<=X<1000,unemployed,4,own,38,high qualif/self emp/mgmt,2,good
+>=200,62,no credits/all paid,education,1556,500<=X<1000,1<=X<4,3,rent,24,unskilled non-resident,1,bad
+0<=X<200,11,all paid,repairs,17255,500<=X<1000,1<=X<4,2,own,46,high qualif/self emp/mgmt,1,good
+>=200,48,existing paid,business,3677,<100,1<=X<4,4,own,50,skilled,2,bad
+no checking,64,no credits/all paid,radio/tv,8520,100<=X<500,unemployed,4,own,71,unskilled resident,2,good
+<0,72,existing paid,education,16584,500<=X<1000,unemployed,2,free,54,unskilled non-resident,2,good
+>=200,21,no credits/all paid,business,8091,<100,1<=X<4,1,own,45,unskilled resident,1,bad
+no checking,65,no credits/all paid,business,5295,500<=X<1000,1<=X<4,3,free,72,high qualif/self emp/mgmt,2,good
+<0,55,all paid,education,16904,<100,unemployed,3,free,40,skilled,1,good
+0<=X<200,68,all paid,repairs,17898,500<=X<1000,1<=X<4,3,own,67,high qualif/self emp/mgmt,2,bad
+<0,36,critical/other existing credit,repairs,7903,500<=X<1000,unemployed,3,own,49,high qualif/self emp/mgmt,2,bad
+<0,69,no credits/all paid,furniture/equipment,16709,>=1000,1<=X<4,1,free,25,high qualif/self emp/mgmt,1,bad
+>=200,25,no credits/all paid,repairs,8934,100<=X<500,>=7,4,own,24,skilled,2,bad
+>=200,10,critical/other existing credit,car,7942,100<=X<500,<1,1,free,25,unskilled resident,2,good
+0<=X<200,9,no credits/all paid,radio/tv,2088,100<=X<500,1<=X<4,3,free,28,unskilled non-resident,2,good
+<0,27,all paid,car,12785,>=1000,<1,4,own,28,unskilled non-resident,2,good
+>=200,38,no credits/all paid,other,15495,100<=X<500,>=7,2,rent,47,skilled,2,good
+>=200,38,delayed previously,other,10149,<100,4<=X<7,4,rent,34,high qualif/self emp/mgmt,2,good
+0<=X<200,8,delayed previously,radio/tv,515,>=1000,unemployed,4,free,68,unskilled non-resident,2,good
+<0,38,all paid,business,3433,no known savings,1<=X<4,4,rent,56,skilled,1,good
+0<=X<200,47,delayed previously,furniture/equipment,6829,<100,>=7,3,own,51,skilled,1,good
+>=200,43,existing paid,other,4023,500<=X<1000,unemployed,2,rent,74,high qualif/self emp/mgmt,2,good
+>=200,7,existing paid,education,4299,500<=X<1000,1<=X<4,3,own,43,skilled,1,good
+>=200,9,critical/other existing credit,education,10998,>=1000,<1,1,own,71,high qualif/self emp/mgmt,2,good
+no checking,23,no credits/all paid,car,10223,500<=X<1000,unemployed,1,rent,75,unskilled non-resident,2,good
+>=200,25,delayed previously,business,3494,500<=X<1000,>=7,4,free,21,skilled,1,good
+<0,52,no credits/all paid,business,12286,>=1000,1<=X<4,1,free,36,unskilled non-resident,1,bad
+>=200,17,all paid,business,949,no known savings,1<=X<4,2,rent,69,unskilled non-resident,1,bad
+<0,33,all paid,radio/tv,5085,>=1000,unemployed,3,rent,27,skilled,1,good
+no checking,22,no credits/all paid,radio/tv,8046,>=1000,1<=X<4,1,rent,35,unskilled resident,1,bad
+no checking,14,delayed previously,repairs,12113,>=1000,>=7,1,free,51,unskilled non-resident,1,bad
+0<=X<200,64,no credits/all paid,car,15945,500<=X<1000,4<=X<7,1,free,64,high qualif/self emp/mgmt,1,bad
+0<=X<200,24,no credits/all paid,furniture/equipment,9261,>=1000,>=7,3,free,57,skilled,2,good
+>=200,18,no credits/all paid,other,18316,<100,4<=X<7,4,rent,45,skilled,2,good
+no checking,46,delayed previously,radio/tv,8602,100<=X<500,<1,4,rent,24,unskilled resident,1,good
+0<=X<200,22,critical/other existing credit,car,11051,no known savings,4<=X<7,3,own,67,high qualif/self emp/mgmt,1,bad
+0<=X<200,51,no credits/all paid,education,16876,<100,<1,4,rent,73,unskilled resident,2,bad
+0<=X<200,20,existing paid,education,7660,500<=X<1000,>=7,1,own,61,skilled,1,good
+0<=X<200,49,existing paid,car,6194,<100,>=7,4,rent,28,unskilled resident,1,bad
+<0,54,delayed previously,repairs,11420,<100,1<=X<4,3,own,39,unskilled resident,1,good
+no checking,16,existing paid,repairs,14144,500<=X<1000,>=7,4,free,36,unskilled non-resident,1,good
+no checking,42,critical/other existing credit,repairs,17516,100<=X<500,unemployed,2,free,57,unskilled resident,1,good
+<0,23,existing paid,radio/tv,11001,no known savings,unemployed,4,own,46,unskilled non-resident,1,good
+<0,70,critical/other existing credit,other,11855,no known savings,4<=X<7,1,free,20,high qualif/self emp/mgmt,1,bad
+>=200,57,delayed previously,radio/tv,4024,500<=X<1000,unemployed,3,rent,70,high qualif/self emp/mgmt,2,good
+no checking,37,delayed previously,education,13371,>=1000,unemployed,4,free,66,skilled,1,good
+<0,15,critical/other existing credit,business,3986,>=1000,>=7,2,free,41,unskilled non-resident,1,good
+0<=X<200,31,all paid,education,5259,no known savings,<1,4,free,67,high qualif/self emp/mgmt,2,bad
+0<=X<200,25,delayed previously,car,15615,500<=X<1000,1<=X<4,3,own,22,skilled,1,good
+>=200,10,no credits/all paid,radio/tv,9656,no known savings,unemployed,4,free,56,unskilled resident,2,bad
+<0,47,critical/other existing credit,repairs,16678,<100,unemployed,4,rent,70,skilled,1,good
+<0,11,all paid,business,14594,500<=X<1000,>=7,2,free,42,skilled,2,good
+0<=X<200,12,existing paid,car,11053,no known savings,>=7,4,free,35,unskilled non-resident,2,good
+<0,50,existing paid,business,13093,<100,>=7,1,free,54,high qualif/self emp/mgmt,2,bad
+no checking,60,critical/other existing credit,radio/tv,847,100<=X<500,1<=X<4,2,rent,40,high qualif/self emp/mgmt,1,good
+<0,25,no credits/all paid,radio/tv,3564,>=1000,>=7,1,own,40,unskilled non-resident,2,good
+<0,27,delayed previously,car,13713,100<=X<500,<1,4,own,37,high qualif/self emp/mgmt,1,good
+0<=X<200,66,all paid,radio/tv,14687,500<=X<1000,1<=X<4,4,own,52,high qualif/self emp/mgmt,1,bad
+<0,38,no credits/all paid,business,15997,100<=X<500,>=7,1,own,73,unskilled resident,2,good
+<0,40,delayed previously,education,5078,500<=X<1000,unemployed,2,free,75,skilled,1,good
+>=200,70,existing paid,furniture/equipment,12903,no known savings,1<=X<4,2,rent,39,unskilled resident,2,bad
+<0,10,existing paid,other,15731,<100,4<=X<7,4,own,19,unskilled resident,1,good
+<0,60,no credits/all paid,other,9690,<100,1<=X<4,1,rent,34,high qualif/self emp/mgmt,2,good
+>=200,8,critical/other existing credit,education,8177,<100,1<=X<4,4,rent,58,skilled,1,good
+<0,16,critical/other existing credit,radio/tv,2467,>=1000,>=7,1,free,74,high qualif/self emp/mgmt,1,good
+0<=X<200,38,no credits/all paid,radio/tv,2463,100<=X<500,<1,1,own,66,skilled,1,good
+0<=X<200,28,delayed previously,business,15930,<100,<1,1,own,68,high qualif/self emp/mgmt,1,good
+no checking,31,no credits/all paid,radio/tv,10410,>=1000,4<=X<7,4,free,21,unskilled non-resident,2,good
+no checking,48,existing paid,car,12309,500<=X<1000,4<=X<7,4,free,40,unskilled non-resident,2,good
+0<=X<200,72,existing paid,other,2957,500<=X<1000,unemployed,4,own,71,unskilled non-resident,2,good
+no checking,47,existing paid,radio/tv,14861,>=1000,4<=X<7,2,own,47,skilled,2,good
+0<=X<200,61,existing paid,business,2129,no known savings,4<=X<7,3,own,70,unskilled non-resident,1,good
+>=200,10,all paid,car,7983,100<=X<500,1<=X<4,4,own,21,unskilled non-resident,2,bad
+0<=X<200,62,no credits/all paid,education,4761,>=1000,1<=X<4,4,free,60,skilled,1,bad
+no checking,29,delayed previously,education,12930,>=1000,unemployed,3,free,64,high qualif/self emp/mgmt,1,bad
+0<=X<200,68,all paid,car,4697,no known savings,4<=X<7,2,own,47,unskilled resident,2,good
+no checking,43,existing paid,other,5411,<100,1<=X<4,2,rent,31,unskilled non-resident,1,bad
+no checking,52,critical/other existing credit,education,12338,500<=X<1000,>=7,2,own,75,unskilled resident,1,good
+>=200,58,delayed previously,other,2666,<100,1<=X<4,1,free,48,skilled,1,bad
+<0,22,delayed previously,education,2065,no known savings,>=7,2,free,29,unskilled non-resident,2,bad
+<0,50,critical/other existing credit,radio/tv,2834,100<=X<500,<1,3,rent,59,skilled,1,good
+<0,25,all paid,business,11313,>=1000,unemployed,1,rent,21,skilled,1,bad
+>=200,9,delayed previously,business,18127,100<=X<500,1<=X<4,4,rent,70,high qualif/self emp/mgmt,2,good
+no checking,26,delayed previously,repairs,16117,500<=X<1000,<1,3,own,28,skilled,2,bad
+0<=X<200,57,all paid,other,12391,>=1000,>=7,1,free,34,high qualif/self emp/mgmt,1,good
+<0,24,no credits/all paid,car,9759,500<=X<1000,>=7,4,rent,74,unskilled non-resident,2,bad
+0<=X<200,30,all paid,repairs,17116,500<=X<1000,4<=X<7,3,free,20,unskilled resident,2,good
+<0,33,critical/other existing credit,radio/tv,1844,no known savings,1<=X<4,4,own,75,high qualif/self emp/mgmt,2,good
+no checking,61,all paid,radio/tv,12235,500<=X<1000,1<=X<4,1,free,22,unskilled non-resident,2,good
+no checking,55,critical/other existing credit,repairs,18267,100<=X<500,>=7,1,rent,25,high qualif/self emp/mgmt,2,bad
+0<=X<200,52,all paid,furniture/equipment,16932,500<=X<1000,>=7,1,rent,21,unskilled non-resident,2,bad
+>=200,25,critical/other existing credit,education,4830,100<=X<500,>=7,3,rent,44,skilled,2,good
+>=200,44,delayed previously,other,795,100<=X<500,1<=X<4,1,free,56,skilled,1,good
+0<=X<200,35,no credits/all paid,education,15993,<100,>=7,4,rent,71,unskilled non-resident,1,good
+no checking,30,no credits/all paid,repairs,10529,500<=X<1000,<1,4,own,32,high qualif/self emp/mgmt,2,bad
+no checking,23,critical/other existing credit,furniture/equipment,10901,500<=X<1000,>=7,4,free,30,high qualif/self emp/mgmt,2,good
+0<=X<200,67,all paid,furniture/equipment,9392,>=1000,1<=X<4,2,free,68,skilled,1,good
+>=200,46,delayed previously,radio/tv,9210,100<=X<500,unemployed,4,free,71,skilled,1,good
+0<=X<200,16,existing paid,repairs,8653,500<=X<1000,<1,2,own,36,skilled,1,good
+<0,37,no credits/all paid,business,17651,<100,<1,1,rent,45,skilled,2,good
+<0,6,critical/other existing credit,furniture/equipment,13583,500<=X<1000,4<=X<7,2,free,39,skilled,1,bad
+no checking,35,critical/other existing credit,business,1472,<100,4<=X<7,2,rent,72,high qualif/self emp/mgmt,2,good
+0<=X<200,10,no credits/all paid,radio/tv,3766,100<=X<500,1<=X<4,4,own,53,high qualif/self emp/mgmt,1,bad
+>=200,40,all paid,other,3941,100<=X<500,<1,4,own,35,unskilled non-resident,1,bad
+0<=X<200,30,all paid,education,13537,500<=X<1000,>=7,3,rent,44,unskilled resident,1,bad
+>=200,47,all paid,car,8795,500<=X<1000,<1,4,free,40,skilled,1,good
+0<=X<200,36,no credits/all paid,business,4123,500<=X<1000,1<=X<4,2,free,62,skilled,1,good
+0<=X<200,53,critical/other existing credit,furniture/equipment,7430,<100,4<=X<7,2,free,66,skilled,2,bad
+>=200,33,all paid,business,2932,>=1000,4<=X<7,3,rent,55,unskilled resident,1,bad
+<0,25,all paid,radio/tv,17300,500<=X<1000,unemployed,2,own,56,high qualif/self emp/mgmt,1,bad
+>=200,13,delayed previously,furniture/equipment,17068,500<=X<1000,4<=X<7,1,own,48,skilled,1,good
+no checking,33,critical/other existing credit,car,1734,500<=X<1000,1<=X<4,1,own,22,unskilled resident,2,good
+>=200,29,all paid,other,14024,100<=X<500,4<=X<7,4,free,43,unskilled resident,1,good
+0<=X<200,21,all paid,education,13129,>=1000,<1,2,rent,67,unskilled resident,2,good
+>=200,54,all paid,furniture/equipment,15343,100<=X<500,<1,3,rent,75,unskilled resident,1,bad
+>=200,8,all paid,furniture/equipment,2454,no known savings,>=7,1,free,57,unskilled resident,1,bad
+>=200,62,all paid,education,7369,no known savings,<1,3,rent,71,skilled,2,good
+<0,72,all paid,repairs,10096,100<=X<500,unemployed,2,own,62,high qualif/self emp/mgmt,2,good
+0<=X<200,54,critical/other existing credit,radio/tv,13892,500<=X<1000,<1,3,free,30,high qualif/self emp/mgmt,1,bad
+0<=X<200,24,delayed previously,car,13772,500<=X<1000,>=7,2,free,34,skilled,1,good
+no checking,63,existing paid,car,17801,<100,unemployed,3,free,62,unskilled resident,1,good
+<0,67,all paid,other,11160,100<=X<500,unemployed,2,rent,66,unskilled resident,2,bad
+<0,56,all paid,education,10788,100<=X<500,4<=X<7,4,own,60,skilled,2,good
+>=200,65,no credits/all paid,other,15634,100<=X<500,<1,3,free,45,unskilled resident,1,bad
+no checking,39,critical/other existing credit,education,13933,100<=X<500,<1,2,free,33,high qualif/self emp/mgmt,1,good
+0<=X<200,38,delayed previously,business,16325,500<=X<1000,<1,3,rent,27,high qualif/self emp/mgmt,1,bad
+no checking,10,no credits/all paid,other,1839,no known savings,4<=X<7,2,own,33,unskilled resident,1,good
+>=200,53,no credits/all paid,education,16083,500<=X<1000,unemployed,1,own,54,high qualif/self emp/mgmt,1,good
+0<=X<200,42,no credits/all paid,education,14359,<100,unemployed,1,own,28,unskilled non-resident,1,good
+0<=X<200,51,existing paid,other,13255,no known savings,1<=X<4,4,free,55,unskilled non-resident,1,good
+no checking,10,no credits/all paid,repairs,12677,500<=X<1000,>=7,4,rent,59,unskilled resident,1,good
+>=200,48,critical/other existing credit,other,3374,>=1000,unemployed,2,rent,74,high qualif/self emp/mgmt,2,good
+no checking,41,critical/other existing credit,education,1328,<100,1<=X<4,1,rent,56,unskilled non-resident,2,bad
+0<=X<200,26,critical/other existing credit,furniture/equipment,13001,>=1000,1<=X<4,4,own,27,unskilled resident,2,good
+>=200,35,no credits/all paid,radio/tv,13249,100<=X<500,unemployed,3,free,50,unskilled non-resident,2,good
+>=200,61,all paid,business,12704,no known savings,>=7,3,rent,64,unskilled resident,1,good

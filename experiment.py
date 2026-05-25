@@ -1,10 +1,11 @@
 """
 experiment.py — LMCU Secure LLM Experiment Runner
 
-Datasets used:
-  - German Credit (UCI / OpenML #31) — included in TabZilla NeurIPS 2023
-  - Home Credit Default Risk (Kaggle, open license)
-  - FinBen credit risk split (NeurIPS 2024 Datasets & Benchmarks)
+Dataset: German Credit (UCI / OpenML #31)
+  → Part of TabZilla Benchmark Suite, NeurIPS 2023 [4]
+  → Download: https://www.openml.org/d/31
+  → Or: sklearn.datasets.fetch_openml('credit-g', version=1)
+  → Local sample: python data/generate_sample.py
 
 References
 ----------
@@ -19,9 +20,9 @@ References
 
 [4] McElfresh et al., "When Do Neural Nets Outperform Boosted Trees on Tabular Data?"
     NeurIPS 2023 Datasets & Benchmarks. https://arxiv.org/abs/2305.02997
-    → German Credit is part of the TabZilla benchmark suite.
 """
 
+import csv
 import json
 import time
 import logging
@@ -36,50 +37,59 @@ from session import SessionManager
 
 logging.basicConfig(format="%(asctime)s [%(levelname)s] %(message)s", level=logging.INFO)
 
-RESULTS_DIR = os.path.join(os.path.dirname(__file__), "..", "results")
+ROOT        = os.path.join(os.path.dirname(__file__), "..")
+DATA_DIR    = os.path.join(ROOT, "data")
+RESULTS_DIR = os.path.join(ROOT, "results")
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 # ---------------------------------------------------------------------------
-# Simulated rows from German Credit dataset (UCI/OpenML #31, public domain)
-# Features: checking_status, duration, credit_history, purpose, credit_amount,
-#           savings_status, employment, installment_commitment, personal_status,
-#           other_parties, residence_since, property_magnitude, age,
-#           other_payment_plans, housing, existing_credits, job, num_dependents,
-#           own_telephone, foreign_worker → class (good/bad)
+# Load German Credit CSV and convert rows to natural-language loan queries.
+# PII fields are injected synthetically to simulate real member records,
+# since the public dataset is fully anonymised (by design).
 # ---------------------------------------------------------------------------
-GERMAN_CREDIT_SAMPLES = [
-    {
-        "member_ref": "GC_001",
-        "query": (
-            "Member account 12345678, Mr. John Smith NI AB123456C, "
-            "checking: no checking, duration: 24 months, "
-            "credit_history: existing paid, purpose: furniture/equipment, "
-            "credit_amount: 2096, savings: no known savings, "
-            "employment: 1<=X<4 years, age: 34. Assess loan risk."
-        ),
-        "true_label": "good",
-    },
-    {
-        "member_ref": "GC_002",
-        "query": (
-            "Contact jane.doe@lmcu.co.uk re account 98765432. "
-            "checking: <0, duration: 48 months, credit_history: delayed previously, "
-            "purpose: car, credit_amount: 7882, savings: <100, "
-            "employment: unemployed, age: 22. Assess loan risk."
-        ),
-        "true_label": "bad",
-    },
-    {
-        "member_ref": "GC_003",
-        "query": (
-            "Member postcode E1W 2RG, sort code 20-00-01. "
-            "checking: 0<=X<200, duration: 12 months, credit_history: all paid, "
-            "purpose: radio/tv, credit_amount: 1200, savings: 100<=X<500, "
-            "employment: 4<=X<7 years, age: 45. Assess loan risk."
-        ),
-        "true_label": "good",
-    },
+
+SYNTHETIC_PII = [
+    ("Mr. John Smith",   "12345678", "AB123456C", "E1W 2RG",  "20-00-01"),
+    ("jane.doe@lmcu.co.uk", "98765432", None,     "EC1A 1BB", None),
+    ("Ms. Sarah Jones",  "11223344", "CD987654A", "SE1 7PB",  "30-96-12"),
 ]
+
+def load_german_credit(n: int = 5) -> list:
+    """Read CSV and build query strings with synthetic PII for masking tests."""
+    csv_path = os.path.join(DATA_DIR, "german_credit.csv")
+    if not os.path.exists(csv_path):
+        raise FileNotFoundError(
+            f"Dataset not found at {csv_path}\n"
+            "Run: python data/generate_sample.py\n"
+            "Or download OpenML #31: https://www.openml.org/d/31"
+        )
+
+    rows = []
+    with open(csv_path, newline="") as f:
+        for i, row in enumerate(csv.DictReader(f)):
+            if i >= n:
+                break
+            pii = SYNTHETIC_PII[i % len(SYNTHETIC_PII)]
+            name_or_email, account, ni, postcode, sort = pii
+
+            pii_str = f"{name_or_email}, account {account}"
+            if ni:       pii_str += f", NI {ni}"
+            if postcode: pii_str += f", postcode {postcode}"
+            if sort:     pii_str += f", sort code {sort}"
+
+            query = (
+                f"Member {pii_str}. "
+                f"checking: {row['checking_status']}, "
+                f"duration: {row['duration']} months, "
+                f"credit_history: {row['credit_history']}, "
+                f"purpose: {row['purpose']}, "
+                f"credit_amount: {row['credit_amount']}, "
+                f"savings: {row['savings_status']}, "
+                f"employment: {row['employment']}, "
+                f"age: {row['age']}. Assess loan risk."
+            )
+            rows.append({"ref": f"GC_{i+1:03d}", "query": query, "true_label": row["class"]})
+    return rows
 
 WAF_CASES = [
     ("What is the average loan balance for members in E1?",            False),
@@ -93,17 +103,19 @@ WAF_CASES = [
 
 
 def run_pii_experiment():
-    print("\n[EXP 1] PII Masking  —  German Credit samples")
+    print("\n[EXP 1] PII Masking  —  German Credit (OpenML #31 / TabZilla NeurIPS 2023)")
     print("-" * 50)
+    samples = load_german_credit(n=5)
     results = []
-    for sample in GERMAN_CREDIT_SAMPLES:
+    for sample in samples:
         r = mask_pii(sample["query"])
         results.append({
-            "member_ref":  sample["member_ref"],
+            "member_ref":  sample["ref"],
+            "true_label":  sample["true_label"],
             "pii_found":   r.pii_found,
             "masked_text": r.masked_text,
         })
-        print(f"  {sample['member_ref']} | PII detected: {r.pii_found}")
+        print(f"  {sample['ref']} [{sample['true_label']:4s}] | PII detected: {r.pii_found}")
 
     out = os.path.join(RESULTS_DIR, "pii_masking.json")
     with open(out, "w") as f:
@@ -180,7 +192,7 @@ def run_session_experiment():
 if __name__ == "__main__":
     print("\n" + "═" * 60)
     print("  SecureLocalFinLLM — Experiment Suite")
-    print("  Dataset: German Credit (TabZilla / NeurIPS 2023 [4])")
+    print("  Dataset: German Credit (OpenML #31, TabZilla NeurIPS 2023 [4])")
     print("═" * 60)
 
     run_pii_experiment()
